@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "plugins": ["svelte3"],
+  "extends": ["eslint:recommended"],
+  "overrides": [
+    {
+      "files": ["**/*.svelte"],
+      "processor": "svelte3/svelte3"
+    }
+  ],
+  "rules": {
+    "no-var": "error",
+    "semi": "error",
+    "max-params": [
+      "error",
+      4
+    ],
+    "no-unreachable-loop": "error",
+    "consistent-return": "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "no-empty-function": "error",
+    "no-return-await": "error",
+    "require-await": "error",
+    "comma-dangle": ["error", "always-multiline"],
+    "quotes": ["error", "single"]
+  }
+}
